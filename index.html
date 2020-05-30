@@ -5,24 +5,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pedro Chaves - Web Developer</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Luckiest+Guy&family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Luckiest+Guy&family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/9fb366a9b8.js" crossorigin="anonymous"></script>
  
 </head>
 <body>
-	<header>
+	<header id = sobre>
 		<nav class="menu">
 			<ul>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Minha Vida</a></li>
-				<li><a href="#">Contato</a></li>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#minhaVida">Minha Vida</a></li>
+				<li><a href="#contato">Contato</a></li>
 			</ul>
 		</nav>
-		<div>
+		<div class="titulo">
 			<h1 class="site-title">Pedro Chaves</h1>
 			<h2 class="site-subtitle">jr. frontend developer</h2>
 		</div>
 	</header>
-	<section class = "portfolio">
+	<section id = minhaVida class = "portfolio">
 		
 		<h2>Minha Vida</h2>
 
@@ -32,7 +33,7 @@
 				<figcaption>Desenvolvimento Web</figcaption>
 			</figure>
 			<figure>
-				<img class="img-portfolio" src="./img/mobile.jpg" alt="Mobile">
+				<img class="img-portfolio1" src="./img/mobile.jpg" alt="Mobile">
 				<figcaption>Desenvolvimento mobile</figcaption>
 			</figure>
 			<figure>
@@ -44,12 +45,33 @@
 				<figcaption>Setups brabos</figcaption>
 			</figure>
 			<figure>
-				<img class="img-portfolio" src="./img/hipsters.png" alt="Site Hipsters.Tech">
+				<img class="img-portfolio2" src="./img/hipsters.png" alt="Site Hipsters.Tech">
 				<figcaption>Sites para programação</figcaption>
 			</figure>
+
+			<figure>
+				<img class="img-portfolio" src="./img/stream.jpg" alt="Streams">
+				<figcaption>Streams</figcaption>
+			</figure>
 		</div>
-	
-		
+	</section>
+	<section class = "contato" id = "contato">
+		<h2>Contato</h2>
+
+		<div class = "grid icons">
+			<a target = "_blank" href = "https://github.com/PedroChavess">
+				<i class = "fab fa-github"></i></a>
+
+			<a target = "_blank" href = "https://www.twitch.tv/pedrochavees">
+				<i class="fab fa-twitch"></i></a>
+
+			<a class = "_blank" href  = "https://www.instagram.com/pedro_chaves1/">
+				<i class="fab fa-instagram"></i></a>
+			
+			<a href = "malito:pedrochaves30@gmail.com">
+				<i class="fas fa-envelope"></i></a>
+
+		</div>
 	</section>
 </body>
 </html>
