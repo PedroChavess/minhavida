@@ -10,7 +10,7 @@
  
 </head>
 <body>
-	<header id = sobre>
+	<header>
 		<nav class="menu">
 			<ul>
 				<li><a href="#sobre">Sobre</a></li>
@@ -23,39 +23,124 @@
 			<h2 class="site-subtitle">jr. frontend developer</h2>
 		</div>
 	</header>
-	<section id = minhaVida class = "portfolio">
+	<section class="sobre container" id = sobre>
+		<h2>Sobre</h2>
+		
+		<figure class="avatar">
+			<img src="https://pbs.twimg.com/profile_images/1267230764032196610/vCZ1MLbg_400x400.jpg" alt="Pedro Chaves">
+		</figure>
+
+		<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta praesentium voluptates architecto voluptate. At consequuntur nulla nostrum voluptas hic vel asperiores illum optio officiis placeat, consequatur voluptates, nihil qui excepturi!
+		</p>
+		
+		<p>
+		Quam saepe perferendis voluptatum cumque, iste blanditiis quisquam doloribus doloremque vero praesentium odio molestiae neque illo. Blanditiis quis impedit, iste vero, velit aperiam enim aliquam odit voluptatibus fugit, beatae ut.
+		</p>
+		
+		<p>
+		Repudiandae expedita nemo modi voluptate quam ad eaque veritatis obcaecati? Aliquid quis accusamus iure nulla ea in architecto nemo distinctio atque vel quidem beatae fugit, ipsam ad aliquam alias ipsum.
+		</p>
+
+		<p>
+			Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">imersão CSS da Alura</a>. 
+		</p>
+
+	</section>
+	<section class = "portfolio container" id = minhaVida >
 		
 		<h2>Minha Vida</h2>
 
 		<div class="grid">
-			<figure>
-				<img class="img-portfolio" src="./img/webDev.jpg" alt="Wev developer">
-				<figcaption>Desenvolvimento Web</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio1" src="./img/mobile.jpg" alt="Mobile">
-				<figcaption>Desenvolvimento mobile</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/projPessoais.jpg" alt="Projetos Pessoais">
-				<figcaption>Projetos Pessoais</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/setups.jpg" alt="Setups">
-				<figcaption>Setups brabos</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio2" src="./img/hipsters.png" alt="Site Hipsters.Tech">
-				<figcaption>Sites para programação</figcaption>
-			</figure>
 
-			<figure>
-				<img class="img-portfolio" src="./img/stream.jpg" alt="Streams">
-				<figcaption>Streams</figcaption>
-			</figure>
+			<div class="flip-card">	
+				<div class="card">
+					<figure class="card-front">
+						<img class="img-portfolio" src="./img/webDev.jpg" alt="Wev developer">
+						<figcaption>Desenvolvimento Web</figcaption>
+					</figure>
+					<div class="card-back">
+						<figure class="card-front">
+							<img class="img-portfolio" src="./img/webDev.jpg" alt="Wev developer">
+							<figcaption>Desenvolvimento Web</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			<div class="flip-card">
+				<div class="card">
+					<figure class="card-front">
+						<img class="img-portfolio1" src="./img/mobile.jpg" alt="Mobile">
+						<figcaption>Desenvolvimento mobile</figcaption>
+					</figure>
+					<div class="card-back">
+						<figure class="card-front">
+							<img class="img-portfolio1" src="./img/mobile.jpg" alt="Mobile">
+							<figcaption>Desenvolvimento mobile</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+					<div class="flip-card">
+						<div class="card">
+							<figure>
+								<img class="img-portfolio" src="./img/projPessoais.jpg" alt="Projetos Pessoais">
+								<figcaption>Projetos Pessoais</figcaption>
+							</figure>
+							<div class="card-back">
+									<figure class="card-front">
+										<img class="img-portfolio" src="./img/projPessoais.jpg" alt="Projetos Pessoais">
+								<figcaption>Projetos Pessoais</figcaption>
+									</figure>
+							</div>
+						</div>
+					</div>
+
+					<div class="flip-card">
+						<div class="card">
+							<figure>
+								<img class="img-portfolio" src="./img/setups.jpg" alt="Setups">
+								<figcaption>Setups brabos</figcaption>
+							</figure>
+							<div class="card-back">
+								<img class="img-portfolio" src="./img/setups.jpg" alt="Setups">
+								<figcaption>Setups brabos</figcaption>
+									</figure>
+							</div>
+						</div>
+					</div>	
+
+					<div class="flip-card">
+						<div class="card">
+							<figure>
+								<img class="img-portfolio2" src="./img/hipsters.png" alt="Site Hipsters.Tech">
+								<figcaption>Sites para programação</figcaption>
+							</figure>
+							<div class="card-back">
+								<img class="img-portfolio2" src="./img/hipsters.png" alt="Site Hipsters.Tech">
+								<figcaption>Sites para programação</figcaption>
+									</figure>
+							</div>
+						</div>
+					</div>
+
+					<div class="flip-card">
+						<div class="card">
+							<figure>
+								<img class="img-portfolio" src="./img/stream.jpg" alt="Streams">
+								<figcaption>Streams</figcaption>
+							</figure>
+							<div class="card-back">
+								<img class="img-portfolio" src="./img/stream.jpg" alt="Streams">
+								<figcaption>Streams</figcaption>
+									</figure>
+							</div>
+						</div>
+					</div>		
 		</div>
 	</section>
-	<section class = "contato" id = "contato">
+	<section class = "contato container" id = "contato">
 		<h2>Contato</h2>
 
 		<div class = "grid icons">

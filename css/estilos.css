@@ -4,6 +4,7 @@
     box-sizing: border-box;
   }
   
+  
   body {
     background-image: url('../img/fundo.jpg');
     background-size: auto 100vh;
@@ -118,12 +119,24 @@
     
   }
 
+  .sobre,
   .contato,
   .portfolio {
     padding: 2em;
     min-height: 100vh;
+    
 }
 
+  @media (min-width: 1200px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+    }
+      
+  }
+
+  .sobre h2,
   .contato h2,
   .portfolio h2 {
     font-family: 'Luckiest Guy', cursive;
@@ -131,6 +144,35 @@
     margin-bottom: 1.1em;
     font-size: 3em;
   }
+
+  .sobre p {
+    color: white;
+    margin-bottom: 1em;
+    text-indent: 1.4em;
+    text-align: justify;
+  }
+
+  .sobre a {  
+    text-decoration: underline;
+  }
+
+  .sobre a:hover {
+    color: cyan;
+    text-decoration: none;
+  }
+
+  .sobre .avatar{
+    margin-left: 2em;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+
+  @media (min-width: 560px){
+      .sobre .avatar{
+        clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+        float: right;
+      }
+  }
+
   .portfolio .grid {
     display: grid;
     gap: 2em;
@@ -157,17 +199,17 @@
 
   .img-portfolio {
     height: 180px;
-    width: 240px;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
     transition: transform 500ms;
   }
 
-  .img-portfolio:active,
+  /*.img-portfolio:active,
   .img-portfolio:hover{
     transform: scale(1.2) rotate(-2.5deg);
-  }
+  }*/
 
   .img-portfolio2:active,
   .img-portfolio2,
@@ -181,11 +223,39 @@
     transition: transform 500ms;
   }
 
-  .img-portfolio2:active,
+  /*.img-portfolio2:active,
   .img-portfolio2:hover,
   .img-portfolio1:active,
   .img-portfolio1:hover{
     transform: scale(1.2) rotate(2.5deg);
+  }*/
+
+.flip-card{
+  perspective: 500px;
+}
+
+  .card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+  }
+
+  .flip-card:hover .card {
+    transform: rotateY(180deg);
+  }
+
+  .card-front,
+  .card-back{
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .card-back{
+    height: 180px;
+    width: 100%;
+    transform: rotateY(180deg);
   }
 
   .contato  .icon {
